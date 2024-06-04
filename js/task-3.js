@@ -1,11 +1,13 @@
 function filterArray(numbers, value) {
-  let filter = numbers[0];
+  let filteredArray = [];
+
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] > value) {
-      value = numbers[i];
+      filteredArray.push(numbers[i]);
     }
-    return value;
   }
+
+  return filteredArray;
 }
 
 // Напиши функцію filterArray(numbers, value),
